@@ -200,7 +200,7 @@ Durmindo eu te tenho
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1653213">
-<input type="hidden" name="_xsrf" value="2|be35c2fd|3db0bbc25d04e2b7f0d919900e7532c4|1576132703"/>
+<input type="hidden" name="_xsrf" value="2|38c4c6c4|821eadf2dbf5398eaa780a375ff13276|1576151338"/>
 <fieldset>
 
 <div class="control-group">
@@ -404,7 +404,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|be35c2fd|3db0bbc25d04e2b7f0d919900e7532c4|1576132703'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|38c4c6c4|821eadf2dbf5398eaa780a375ff13276|1576151338'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

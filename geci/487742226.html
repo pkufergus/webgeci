@@ -172,7 +172,7 @@ Cause all you ever do is make me...
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=487742226">
-<input type="hidden" name="_xsrf" value="2|faf87824|fd78a0da316051730603c8fb39eb1028|1576135121"/>
+<input type="hidden" name="_xsrf" value="2|6b14c2cd|ff5e42cabc0b5a2df2cb59ebdb484ea4|1576155712"/>
 <fieldset>
 
 <div class="control-group">
@@ -376,7 +376,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|faf87824|fd78a0da316051730603c8fb39eb1028|1576135121'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|6b14c2cd|ff5e42cabc0b5a2df2cb59ebdb484ea4|1576155712'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

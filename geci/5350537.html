@@ -167,7 +167,7 @@ step to you 끝이 보이지 않는 이밤
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=5350537">
-<input type="hidden" name="_xsrf" value="2|bfeefb46|6e2d1402eba6b50f369edc0086215de4|1576134239"/>
+<input type="hidden" name="_xsrf" value="2|e849334a|5a20f936210a6d80d8088ca9a77c4f13|1576154988"/>
 <fieldset>
 
 <div class="control-group">
@@ -371,7 +371,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|bfeefb46|6e2d1402eba6b50f369edc0086215de4|1576134239'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|e849334a|5a20f936210a6d80d8088ca9a77c4f13|1576154988'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

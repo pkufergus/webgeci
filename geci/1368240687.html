@@ -171,7 +171,7 @@ PV：凡凡棥士林
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1368240687">
-<input type="hidden" name="_xsrf" value="2|469e5fda|995beb2aedd12899adc07763553bfa35|1576135546"/>
+<input type="hidden" name="_xsrf" value="2|29321e8c|a2a5e9d7e5fa6d76fc9bc3395cae5b50|1576155934"/>
 <fieldset>
 
 <div class="control-group">
@@ -375,7 +375,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|469e5fda|995beb2aedd12899adc07763553bfa35|1576135546'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|29321e8c|a2a5e9d7e5fa6d76fc9bc3395cae5b50|1576155934'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

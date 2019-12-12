@@ -165,7 +165,7 @@ OP：北京少城时代文化发展有限公司
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=511124094">
-<input type="hidden" name="_xsrf" value="2|d9f35ccd|a8e20887ae5d1c5c8f53ff71bca2479b|1576133877"/>
+<input type="hidden" name="_xsrf" value="2|c62ea4c6|a8b31be5fb9c04767a1d52790e2cb23e|1576153426"/>
 <fieldset>
 
 <div class="control-group">
@@ -369,7 +369,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|d9f35ccd|a8e20887ae5d1c5c8f53ff71bca2479b|1576133877'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|c62ea4c6|a8b31be5fb9c04767a1d52790e2cb23e|1576153426'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

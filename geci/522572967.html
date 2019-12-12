@@ -184,7 +184,7 @@ Tell me you're covered tonight
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=522572967">
-<input type="hidden" name="_xsrf" value="2|e2180a3d|81aa89aa6e791aab48f1df01cbafa2fa|1576133061"/>
+<input type="hidden" name="_xsrf" value="2|bfa05cf3|013bb6980d1030c09ed85a3924ee45d8|1576151595"/>
 <fieldset>
 
 <div class="control-group">
@@ -388,7 +388,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|e2180a3d|81aa89aa6e791aab48f1df01cbafa2fa|1576133061'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|bfa05cf3|013bb6980d1030c09ed85a3924ee45d8|1576151595'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

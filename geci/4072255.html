@@ -160,7 +160,7 @@ Poppin bottles in the ice, like a b
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=4072255">
-<input type="hidden" name="_xsrf" value="2|84c521bc|4c89ce64e998fdd8cdb75e7076cfff46|1576132748"/>
+<input type="hidden" name="_xsrf" value="2|4f9b88ea|0c30855a1953e41d88f8a0d57e2c4eb8|1576151444"/>
 <fieldset>
 
 <div class="control-group">
@@ -364,7 +364,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|84c521bc|4c89ce64e998fdd8cdb75e7076cfff46|1576132748'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|4f9b88ea|0c30855a1953e41d88f8a0d57e2c4eb8|1576151444'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

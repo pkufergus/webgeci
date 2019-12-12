@@ -181,7 +181,7 @@ Aloha heja he
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=864622002">
-<input type="hidden" name="_xsrf" value="2|58d6c22c|f08622be65f06a0578ad2ef55b174d30|1576134309"/>
+<input type="hidden" name="_xsrf" value="2|a4df2b65|c8a529c5965447446ef144d856087b5c|1576155168"/>
 <fieldset>
 
 <div class="control-group">
@@ -385,7 +385,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|58d6c22c|f08622be65f06a0578ad2ef55b174d30|1576134309'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|a4df2b65|c8a529c5965447446ef144d856087b5c|1576155168'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

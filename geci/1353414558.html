@@ -175,7 +175,7 @@ OP：安徽泽鹏天下文化传播有限公司
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1353414558">
-<input type="hidden" name="_xsrf" value="2|4dd006d4|28822fc3a5ec8f58bf69ceb1fd1801ec|1576135987"/>
+<input type="hidden" name="_xsrf" value="2|4226c6f9|a85623def329ebbc33900539b427c622|1576156549"/>
 <fieldset>
 
 <div class="control-group">
@@ -379,7 +379,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|4dd006d4|28822fc3a5ec8f58bf69ceb1fd1801ec|1576135987'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|4226c6f9|a85623def329ebbc33900539b427c622|1576156549'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

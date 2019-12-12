@@ -136,7 +136,7 @@ Repertoire Owner：MER Recordings (Swedish Deal)
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1333159923">
-<input type="hidden" name="_xsrf" value="2|06d0c4ee|2065d2b752b792e22cc20ffd0c6872d4|1576135026"/>
+<input type="hidden" name="_xsrf" value="2|bf25db98|784dbf476af699be38108cc2369094dd|1576155619"/>
 <fieldset>
 
 <div class="control-group">
@@ -340,7 +340,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|06d0c4ee|2065d2b752b792e22cc20ffd0c6872d4|1576135026'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|bf25db98|784dbf476af699be38108cc2369094dd|1576155619'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

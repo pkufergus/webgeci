@@ -233,7 +233,7 @@ Jägerbom
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28215174">
-<input type="hidden" name="_xsrf" value="2|f11fbfca|8010d3493d0a62e385aaba79bfb2efab|1576135657"/>
+<input type="hidden" name="_xsrf" value="2|e007697b|a3d8d617eee6c7722834d0c50eb82839|1576156250"/>
 <fieldset>
 
 <div class="control-group">
@@ -437,7 +437,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|f11fbfca|8010d3493d0a62e385aaba79bfb2efab|1576135657'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|e007697b|a3d8d617eee6c7722834d0c50eb82839|1576156250'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

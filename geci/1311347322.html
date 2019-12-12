@@ -190,7 +190,7 @@ i will find you
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1311347322">
-<input type="hidden" name="_xsrf" value="2|8224acbb|68aa3d2bdee37bcb9c553326abadc892|1576134891"/>
+<input type="hidden" name="_xsrf" value="2|ec365499|c04aa740678fd2b8797b0bb8180a1e59|1576155500"/>
 <fieldset>
 
 <div class="control-group">
@@ -394,7 +394,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|8224acbb|68aa3d2bdee37bcb9c553326abadc892|1576134891'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|ec365499|c04aa740678fd2b8797b0bb8180a1e59|1576155500'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

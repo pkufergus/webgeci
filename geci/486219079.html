@@ -126,7 +126,7 @@ l ve been hearing symphonies 我亲耳那爱的交响乐 before all lheard was s
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=486219079">
-<input type="hidden" name="_xsrf" value="2|0b09ea65|55799c898b07e7aaa10058b2c5d00702|1576132660"/>
+<input type="hidden" name="_xsrf" value="2|e3190624|623f79203cf960fb44cf2becaf1ac8fe|1576151359"/>
 <fieldset>
 
 <div class="control-group">
@@ -330,7 +330,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|0b09ea65|55799c898b07e7aaa10058b2c5d00702|1576132660'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|e3190624|623f79203cf960fb44cf2becaf1ac8fe|1576151359'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

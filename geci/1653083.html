@@ -188,7 +188,7 @@ Yo te propo
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1653083">
-<input type="hidden" name="_xsrf" value="2|6a6b7c43|06094b72c5561c40611c1cae9bdc3cf6|1576132739"/>
+<input type="hidden" name="_xsrf" value="2|13d8bbf4|d8ac142a4a9d45da3c47cbd7d405ab1f|1576151434"/>
 <fieldset>
 
 <div class="control-group">
@@ -392,7 +392,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|6a6b7c43|06094b72c5561c40611c1cae9bdc3cf6|1576132739'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|13d8bbf4|d8ac142a4a9d45da3c47cbd7d405ab1f|1576151434'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

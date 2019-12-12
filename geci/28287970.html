@@ -193,7 +193,7 @@ Of
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28287970">
-<input type="hidden" name="_xsrf" value="2|10478925|24d903cf6ce5cece2b60ec2dd74058c8|1576132580"/>
+<input type="hidden" name="_xsrf" value="2|7c66ed2c|81366734f9222922b780f6a5b49e6637|1576151012"/>
 <fieldset>
 
 <div class="control-group">
@@ -397,7 +397,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|10478925|24d903cf6ce5cece2b60ec2dd74058c8|1576132580'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|7c66ed2c|81366734f9222922b780f6a5b49e6637|1576151012'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

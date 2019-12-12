@@ -157,7 +157,7 @@ To see what condition my condition was in
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1376406997">
-<input type="hidden" name="_xsrf" value="2|9bf9c775|4c7adc1acbc29d26ff83c1067128bba5|1576137144"/>
+<input type="hidden" name="_xsrf" value="2|8707fb42|d596ef2806108228a4b5a79e62bfcf02|1576157752"/>
 <fieldset>
 
 <div class="control-group">
@@ -361,7 +361,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|9bf9c775|4c7adc1acbc29d26ff83c1067128bba5|1576137144'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|8707fb42|d596ef2806108228a4b5a79e62bfcf02|1576157752'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

@@ -129,7 +129,7 @@ EDM2合辑曲库已全部解禁，感谢30多位优秀制作人能参与本次�
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1395456145">
-<input type="hidden" name="_xsrf" value="2|d28a5bc5|ab30035d6582ecaaa096e63f071dc2e6|1576135562"/>
+<input type="hidden" name="_xsrf" value="2|330dd5e9|645cc27881b8e14da8a4bc169cb45796|1576155951"/>
 <fieldset>
 
 <div class="control-group">
@@ -333,7 +333,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|d28a5bc5|ab30035d6582ecaaa096e63f071dc2e6|1576135562'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|330dd5e9|645cc27881b8e14da8a4bc169cb45796|1576155951'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

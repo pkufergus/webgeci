@@ -204,7 +204,7 @@ Your hands on mine
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1299066320">
-<input type="hidden" name="_xsrf" value="2|247b37ca|f4cb1a82aa774418f29cea77b17f4ea0|1576135619"/>
+<input type="hidden" name="_xsrf" value="2|97cf0a97|532087b25cbd93daa6341784e60deb57|1576156212"/>
 <fieldset>
 
 <div class="control-group">
@@ -408,7 +408,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|247b37ca|f4cb1a82aa774418f29cea77b17f4ea0|1576135619'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|97cf0a97|532087b25cbd93daa6341784e60deb57|1576156212'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

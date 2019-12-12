@@ -162,7 +162,7 @@ But I'm down for the minute so just chill
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=422073460">
-<input type="hidden" name="_xsrf" value="2|7c046643|bcec542f013cfe3b7923d8cb6a574a4a|1576136356"/>
+<input type="hidden" name="_xsrf" value="2|7f622703|1af32406c906c949b5ea7f40f4f4174d|1576157334"/>
 <fieldset>
 
 <div class="control-group">
@@ -366,7 +366,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|7c046643|bcec542f013cfe3b7923d8cb6a574a4a|1576136356'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|7f622703|1af32406c906c949b5ea7f40f4f4174d|1576157334'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

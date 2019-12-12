@@ -168,7 +168,7 @@ and your counterfeit soul
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28892267">
-<input type="hidden" name="_xsrf" value="2|4a478b24|2ef454e4b79338b5a5d1abcf0aeeb85d|1576133456"/>
+<input type="hidden" name="_xsrf" value="2|8f02d7ac|8a39eedd6bb3cfce0f1e85021f8ed63a|1576151876"/>
 <fieldset>
 
 <div class="control-group">
@@ -372,7 +372,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|4a478b24|2ef454e4b79338b5a5d1abcf0aeeb85d|1576133456'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|8f02d7ac|8a39eedd6bb3cfce0f1e85021f8ed63a|1576151876'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }
