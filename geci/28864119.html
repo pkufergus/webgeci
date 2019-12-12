@@ -192,7 +192,7 @@ You wiggle, w
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28864119">
-<input type="hidden" name="_xsrf" value="2|04bf2916|35283dc1d7c4c1d34ce27e3d50836828|1576131386"/>
+<input type="hidden" name="_xsrf" value="2|085872c5|d9dd06d26f8692e8f57a2d4a1ce5bce8|1576149026"/>
 <fieldset>
 
 <div class="control-group">
@@ -396,7 +396,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|04bf2916|35283dc1d7c4c1d34ce27e3d50836828|1576131386'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|085872c5|d9dd06d26f8692e8f57a2d4a1ce5bce8|1576149026'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

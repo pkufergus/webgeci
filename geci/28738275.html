@@ -170,7 +170,7 @@ M-m-make
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28738275">
-<input type="hidden" name="_xsrf" value="2|3b3e6c5c|25c2c9291793b0347b08584da8c10177|1576131324"/>
+<input type="hidden" name="_xsrf" value="2|b56243ae|d233108e8bd98a9ee809b36216a7c599|1576149176"/>
 <fieldset>
 
 <div class="control-group">
@@ -374,7 +374,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|3b3e6c5c|25c2c9291793b0347b08584da8c10177|1576131324'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|b56243ae|d233108e8bd98a9ee809b36216a7c599|1576149176'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

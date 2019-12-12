@@ -165,7 +165,7 @@ i got a hangov
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=26836466">
-<input type="hidden" name="_xsrf" value="2|2881f10a|f7ed70549531a0a09afdd239fbfee31c|1576131222"/>
+<input type="hidden" name="_xsrf" value="2|98729a0b|f9a705c35c4c6f17120ae5b8e7847487|1576148792"/>
 <fieldset>
 
 <div class="control-group">
@@ -369,7 +369,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|2881f10a|f7ed70549531a0a09afdd239fbfee31c|1576131222'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|98729a0b|f9a705c35c4c6f17120ae5b8e7847487|1576148792'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

@@ -182,7 +182,7 @@ Cruise t
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1398284019">
-<input type="hidden" name="_xsrf" value="2|23a78ed3|ed00825533ec65bb678b69c1e74ad1a1|1576130903"/>
+<input type="hidden" name="_xsrf" value="2|d59f64c9|95b8bd3379a0644157a3552978d903c9|1576148613"/>
 <fieldset>
 
 <div class="control-group">
@@ -386,7 +386,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|23a78ed3|ed00825533ec65bb678b69c1e74ad1a1|1576130903'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|d59f64c9|95b8bd3379a0644157a3552978d903c9|1576148613'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

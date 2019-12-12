@@ -155,7 +155,7 @@ We will forever be faded under gold skies
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28612883">
-<input type="hidden" name="_xsrf" value="2|0b8a9cfd|1c72b191a22be5f869b15d4c370d1668|1576130793"/>
+<input type="hidden" name="_xsrf" value="2|19d858d2|cba96c270885b3ca94f69b67e6ffff2c|1576148503"/>
 <fieldset>
 
 <div class="control-group">
@@ -359,7 +359,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|0b8a9cfd|1c72b191a22be5f869b15d4c370d1668|1576130793'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|19d858d2|cba96c270885b3ca94f69b67e6ffff2c|1576148503'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

@@ -198,7 +198,7 @@ Yeah higher brothers black cab made in china
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=552816846">
-<input type="hidden" name="_xsrf" value="2|674a7a64|1a8061c2e495d44d876a843469374080|1576131542"/>
+<input type="hidden" name="_xsrf" value="2|34a54ed2|f1eebe571da0d68a69e35527579215d9|1576149403"/>
 <fieldset>
 
 <div class="control-group">
@@ -402,7 +402,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|674a7a64|1a8061c2e495d44d876a843469374080|1576131542'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|34a54ed2|f1eebe571da0d68a69e35527579215d9|1576149403'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

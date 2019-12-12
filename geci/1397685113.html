@@ -206,7 +206,7 @@ I'm falling down, I'm falling
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1397685113">
-<input type="hidden" name="_xsrf" value="2|56abcc31|0473b50a1f7d691362b905858b3ee290|1576130871"/>
+<input type="hidden" name="_xsrf" value="2|7f38db7c|e286ff1e859c87b49cbf85de54c83133|1576148582"/>
 <fieldset>
 
 <div class="control-group">
@@ -410,7 +410,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|56abcc31|0473b50a1f7d691362b905858b3ee290|1576130871'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|7f38db7c|e286ff1e859c87b49cbf85de54c83133|1576148582'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

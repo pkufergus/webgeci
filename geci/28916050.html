@@ -173,7 +173,7 @@ This here should be your weathe
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=28916050">
-<input type="hidden" name="_xsrf" value="2|ee7f2a05|af6b3c8a171d7ef28402a40b0189851b|1576131072"/>
+<input type="hidden" name="_xsrf" value="2|14e01ecd|6772e50b8e15dcb06b85c77b460ca71e|1576148978"/>
 <fieldset>
 
 <div class="control-group">
@@ -377,7 +377,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|ee7f2a05|af6b3c8a171d7ef28402a40b0189851b|1576131072'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|14e01ecd|6772e50b8e15dcb06b85c77b460ca71e|1576148978'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

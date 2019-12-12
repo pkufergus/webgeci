@@ -160,7 +160,7 @@ Know the dog keep the hip rocks, stea
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=22458623">
-<input type="hidden" name="_xsrf" value="2|91a76811|316ef83c8ba51e3452ecbb70c2831f1f|1576131355"/>
+<input type="hidden" name="_xsrf" value="2|cfc5b2ea|11477d61b4fa22c9e3b26e47e7e9dbbf|1576148994"/>
 <fieldset>
 
 <div class="control-group">
@@ -364,7 +364,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|91a76811|316ef83c8ba51e3452ecbb70c2831f1f|1576131355'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|cfc5b2ea|11477d61b4fa22c9e3b26e47e7e9dbbf|1576148994'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

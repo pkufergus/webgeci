@@ -182,7 +182,7 @@ We is the orignal don of all dons
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=27164636">
-<input type="hidden" name="_xsrf" value="2|a65b1794|2c616e7f89732587385cee6f9901a90e|1576131879"/>
+<input type="hidden" name="_xsrf" value="2|414fbb70|ad3f0220fd140b6f0a97702dac39d0d2|1576149642"/>
 <fieldset>
 
 <div class="control-group">
@@ -386,7 +386,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|a65b1794|2c616e7f89732587385cee6f9901a90e|1576131879'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|414fbb70|ad3f0220fd140b6f0a97702dac39d0d2|1576149642'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

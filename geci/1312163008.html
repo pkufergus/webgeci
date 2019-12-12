@@ -195,7 +195,7 @@ And slamming doors
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1312163008">
-<input type="hidden" name="_xsrf" value="2|db8f78fd|a635cd8e17b15f908f92f845748d0d31|1576130789"/>
+<input type="hidden" name="_xsrf" value="2|4c897553|a4cc9542edd7ded1aa97f9db8ef1f2f3|1576148499"/>
 <fieldset>
 
 <div class="control-group">
@@ -399,7 +399,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|db8f78fd|a635cd8e17b15f908f92f845748d0d31|1576130789'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|4c897553|a4cc9542edd7ded1aa97f9db8ef1f2f3|1576148499'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

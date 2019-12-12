@@ -181,7 +181,7 @@ Got me ten feet off the ground...
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1392729012">
-<input type="hidden" name="_xsrf" value="2|9bc3025c|f22e22b2285aa9506ed07aad52209585|1576130865"/>
+<input type="hidden" name="_xsrf" value="2|9ac37771|beb2ce30e8ca8e5a1f55ebcb24000168|1576148576"/>
 <fieldset>
 
 <div class="control-group">
@@ -385,7 +385,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|9bc3025c|f22e22b2285aa9506ed07aad52209585|1576130865'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|9ac37771|beb2ce30e8ca8e5a1f55ebcb24000168|1576148576'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

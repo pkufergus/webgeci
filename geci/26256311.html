@@ -168,7 +168,7 @@ Wake up in
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=26256311">
-<input type="hidden" name="_xsrf" value="2|8961f277|4fa43c56641da0c60f65bbcd654f65aa|1576131396"/>
+<input type="hidden" name="_xsrf" value="2|d64016bb|b8cff52b08084f0b9b6de9765157e627|1576149037"/>
 <fieldset>
 
 <div class="control-group">
@@ -372,7 +372,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|8961f277|4fa43c56641da0c60f65bbcd654f65aa|1576131396'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|d64016bb|b8cff52b08084f0b9b6de9765157e627|1576149037'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }
