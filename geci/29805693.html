@@ -153,7 +153,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=29805693">
-<input type="hidden" name="_xsrf" value="2|103e4216|5e7ab265907d821e11de8063cfe5a95d|1576138864"/>
+<input type="hidden" name="_xsrf" value="2|dd261bc4|04fe57aa3312d18554e162a7ced37bbb|1576150539"/>
 <fieldset>
 
 <div class="control-group">
@@ -357,7 +357,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|103e4216|5e7ab265907d821e11de8063cfe5a95d|1576138864'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|dd261bc4|04fe57aa3312d18554e162a7ced37bbb|1576150539'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }
