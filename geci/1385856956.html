@@ -6,6 +6,12 @@
 <meta name="description" content="歌词">
 <meta name="keywords" content="歌词网 歌词 歌曲 生活">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/www/assets/src/bootstrap.css?a101dae4861981b1a5d5c63ef2c11331">
+<link rel="stylesheet" href="/www/assets/src/bootstrap-responsive.css?871defe8c1a928bcbcc3efcf4a1dde42">
+<link rel="stylesheet" href="/www/assets/src/framework.css?8f2036eb742c0f37171479116f06213b">
+<link rel="stylesheet" href="/www/assets/src/framework-responsive.css?d9a4c77fc5202d4adbc0c3ea433c91e6">
+<link rel="stylesheet" href="/www/assets/src/customize.css?3016d96e6bc90f86d3eb9f30b790fca7">
+<link rel="stylesheet" href="/www/assets/src/customize-responsive.css?2b3661947c68bbe939f5441b05781751">
 <!--[if lt IE 9]><script src="/www/assets/src/html5shiv.js?b1bea6cbf223ccd6fe2e38f0774f3413"></script><![endif]-->
 
 <style>
@@ -31,6 +37,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 <span class="icon-bar"></span>
 </button>
 <div class="container">
+<a class="brand" href="/">品歌词<br>pingeci.com</a>
 
 <div class="nav-collapse collapse">
 <ul class="nav">
@@ -38,6 +45,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 
 
 
+<li class="active"><a href="/">歌曲排名榜</a></li>
 
 
 
@@ -150,6 +158,9 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 </article>
 <div>
 <ul class="pager">
+<li class="previous disabled"><a href="javascript:;">&larr; 上一篇</a></li>
+<li><a href="javascript:;" title="点赞（+1）" class="award" data-post-id="1385856956" data-plus-ts="✓ 1">+ 1</a></li>
+<li class="next disabled"><a href="javascript:;">下一篇 &rarr;</a></li>
 </ul>
 </div>
 <div id="talks">
@@ -165,6 +176,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 <tfoot>
 <tr>
 <td colspan="2" style="text-align:center;padding:0">
+<a href="javascript:;" title="加载更多评论" class="load-more" style="display:block;width:100%;height:100%;">···</a>
 </td>
 </tr>
 </tfoot>
@@ -172,7 +184,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1385856956">
-<input type="hidden" name="_xsrf" value="2|bb26bd2c|d3a45073fe519814dc05b509aae668f1|1576123035"/>
+<input type="hidden" name="_xsrf" value="2|374f4ce5|168df9026673213144a3c2062283e596|1576127677"/>
 <fieldset>
 
 <div class="control-group">
@@ -220,6 +232,7 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 
 
 <ul class="nav nav-tabs nav-stacked">
+<li class="active"><a href="javascript:;">热门歌手</a></li>
 
 <li><a class="texted" title="隔壁老樊" href="/geshou/12429072.html">隔壁老樊</a></li>
 
@@ -336,6 +349,8 @@ article a, .talk-cont {word-wrap: break-word; word-break: break-all;}
 <footer class="footer">
 <div class="container">
 <img class="qrcode pull-right" src="/www/assets/img/pingeci.com.png">
+<p>&copy;2019 <a href="http://pingeci.com/">pingeci.com</a>.</p>
+<p>设计和开发者 <a href="http://pingeci.com/@song" target="_blank">Song</a>.</p>
 
 
 <ul class="footer-links">
@@ -373,7 +388,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|bb26bd2c|d3a45073fe519814dc05b509aae668f1|1576123035'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|374f4ce5|168df9026673213144a3c2062283e596|1576127677'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }
@@ -431,6 +446,7 @@ var html = '';
 html += '<tr data-talk-id="' + talk['talk_id'] + '">';
 html += '<td class="talk-user span2"><i class="icon-user"></i> ';
 if (talk['user_id']) {
+html += '<a href="/@' + L.method.htext(talk['user_name']) + '" target="_blank">' + L.method.htext(talk['user_name']) + '</a>';
 } else {
 html += L.method.htext(talk['user_name']);
 }
