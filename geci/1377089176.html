@@ -194,7 +194,7 @@ Baby听我说
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1377089176">
-<input type="hidden" name="_xsrf" value="2|a3176f68|22d14aae8dbdf4e79bfcc2f2d77b1775|1576139249"/>
+<input type="hidden" name="_xsrf" value="2|b85467f0|1d681854581d85320c3004f1e2b76870|1576158100"/>
 <fieldset>
 
 <div class="control-group">
@@ -398,7 +398,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|a3176f68|22d14aae8dbdf4e79bfcc2f2d77b1775|1576139249'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|b85467f0|1d681854581d85320c3004f1e2b76870|1576158100'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

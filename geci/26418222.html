@@ -160,7 +160,7 @@ x<br>さあまぶた閉じて耳をふさげよ
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=26418222">
-<input type="hidden" name="_xsrf" value="2|d181d5a5|2436051114e7a10e15b467c516fb0a71|1576139926"/>
+<input type="hidden" name="_xsrf" value="2|03893f8a|e00c861723d8d78f0887f211c3b748ec|1576200280"/>
 <fieldset>
 
 <div class="control-group">
@@ -364,7 +364,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|d181d5a5|2436051114e7a10e15b467c516fb0a71|1576139926'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|03893f8a|e00c861723d8d78f0887f211c3b748ec|1576200280'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

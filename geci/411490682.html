@@ -140,7 +140,7 @@ The wolf that's you
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=411490682">
-<input type="hidden" name="_xsrf" value="2|f3eb8564|c7e08d820b688aa2b541b3cebdd7569b|1576137187"/>
+<input type="hidden" name="_xsrf" value="2|f930c444|c4744e6d0ed21ca51976bfadeeaf333f|1576157797"/>
 <fieldset>
 
 <div class="control-group">
@@ -344,7 +344,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|f3eb8564|c7e08d820b688aa2b541b3cebdd7569b|1576137187'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|f930c444|c4744e6d0ed21ca51976bfadeeaf333f|1576157797'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

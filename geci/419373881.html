@@ -182,7 +182,7 @@ Jony J:
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=419373881">
-<input type="hidden" name="_xsrf" value="2|75308a99|8aadff20bb2d55eae37ed74b4b0f25cc|1576140961"/>
+<input type="hidden" name="_xsrf" value="2|9f11c3ff|30419de5998a42d6331dba4d610e1d6a|1576206326"/>
 <fieldset>
 
 <div class="control-group">
@@ -386,7 +386,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|75308a99|8aadff20bb2d55eae37ed74b4b0f25cc|1576140961'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|9f11c3ff|30419de5998a42d6331dba4d610e1d6a|1576206326'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

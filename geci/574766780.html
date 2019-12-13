@@ -195,7 +195,7 @@ Ice Paper
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=574766780">
-<input type="hidden" name="_xsrf" value="2|e68eaad4|abf9ea6a82e5ffe270d22f0cd216cdff|1576141043"/>
+<input type="hidden" name="_xsrf" value="2|2ed8efc4|ac9e9730b201c3a04524b16937a6cf7c|1576205792"/>
 <fieldset>
 
 <div class="control-group">
@@ -399,7 +399,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|e68eaad4|abf9ea6a82e5ffe270d22f0cd216cdff|1576141043'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|2ed8efc4|ac9e9730b201c3a04524b16937a6cf7c|1576205792'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }

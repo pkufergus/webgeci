@@ -211,7 +211,7 @@ Tonight I do it all for love I do it all for love
 </fieldset>
 </div>
 <form id="form-talk" class="form-horizontal" method="post" action="/voice?poid=1368482514">
-<input type="hidden" name="_xsrf" value="2|53c3cd68|4f37a398fbe4c55a2e577b5014251cdd|1576137372"/>
+<input type="hidden" name="_xsrf" value="2|7d73ad4a|19a0258a0633c8b780ae6e327c3860a4|1576157766"/>
 <fieldset>
 
 <div class="control-group">
@@ -415,7 +415,7 @@ $('.pager .award').click(function() {
 var i = $(this);
 if (i.attr('disabled') != 'disabled') {
 i.attr('disabled', 'disabled').parent().addClass('disabled');
-$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|53c3cd68|4f37a398fbe4c55a2e577b5014251cdd|1576137372'}, function() {
+$.post('/score?poid=' + i.data('post-id'), {'_xsrf': '2|7d73ad4a|19a0258a0633c8b780ae6e327c3860a4|1576157766'}, function() {
 i.text(i.data('plus-ts'));
 }, 'json');
 }
